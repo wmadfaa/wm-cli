@@ -80,7 +80,7 @@ export default class CreateBranch extends Command {
     }
   ], {concurrent: true})
 
-  get_create_origin_branch_task = (root: string, desc: string, type: string, id?: string) => new Listr([
+  get_create_remote_branch_task = (root: string, desc: string, type: string, id?: string) => new Listr([
     {
       title: 'validate inputs',
       task: () => this.get_validate_branchName_task(desc, type, id)
@@ -224,8 +224,8 @@ export default class CreateBranch extends Command {
     }
 
     if (root && desc && type) {
-      if (origin) {
-        const createBranchTasks = this.get_create_origin_branch_task(root, desc, type, id)
+      if (remote) {
+        const createBranchTasks = this.get_create_remote_branch_task(root, desc, type, id)
         try {
           await createBranchTasks.run()
         } catch (error) {

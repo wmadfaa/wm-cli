@@ -1,0 +1,19 @@
+{
+  "npm.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "boundary",
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.rulers": [100],
+  "search.exclude": {
+    "**/public/**": true,
+    "**/.cache/**": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  }
+}

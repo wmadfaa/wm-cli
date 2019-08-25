@@ -29,28 +29,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`wm-cli hello [FILE]`](#wm-cli-hello-file)
-* [`wm-cli help [COMMAND]`](#wm-cli-help-command)
+- [wm-cli](#wm-cli)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`wm-cli create:branch [FILE]`](#wm-cli-createbranch-file)
+  - [`wm-cli help [COMMAND]`](#wm-cli-help-command)
 
-## `wm-cli hello [FILE]`
+## `wm-cli create:branch [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ wm-cli hello [FILE]
+  $ wm-cli create:branch [FILE]
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
   -n, --name=name  name to print
-
-EXAMPLE
-  $ wm-cli hello
-  hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/wmadfaa/wm-cli/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/create/branch.ts](https://github.com/wmadfaa/wm-cli/blob/v0.0.1/src/commands/create/branch.ts)_
 
 ## `wm-cli help [COMMAND]`
 
